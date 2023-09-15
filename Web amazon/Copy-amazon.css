@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: #cfcbcb;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.atas1 {
+  display: flex;
+  background-color: #131921;
+  width: 100%;
+  justify-items: center;
+  top: 0;
+  height: 60px;
+}
+
+.atas1 img {
+  width: 90px;
+  height: auto;
+  margin: 15px;
+}
+
+.atas1 span {
+  font-size: 12px;
+  color: #cfcbcb;
+}
+
+.posisi {
+  width: 100px;
+  display: flex;
+  color: white;
+  line-height: 14px;
+  text-align: center;
+  align-items: center;
+}
+
+.posisi-en {
+  width: 70px;
+  display: flex;
+  color: white;
+  line-height: 14px;
+  text-align: center;
+  align-items: center;
+}
+
+.posisi-1 {
+  width: 120px;
+  display: flex;
+  font-size: 14px;
+  color: white;
+  line-height: 14px;
+  align-items: center;
+}
+
+.posisi-order {
+  width: 80px;
+  margin-left: 15px;
+  display: flex;
+  font-size: 14px;
+  color: white;
+  line-height: 14px;
+  align-items: center;
+}
+
+.search {
+  width: 47%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 5px 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+button svg {
+  height: 20px;
+  padding: 10px 15px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 10px 10px 10px 0px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #febd69;
+}
+
+.second {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  margin-top: 0;
+  background-color: #232f3e;
+}
+
+.second ul {
+  list-style: none;
+  margin: auto 30px;
+  font-size: 14px;
+  display: flex;
+}
+
+.second a {
+  color: #fff;
+}
+
+/* Hamburger Menu */
+
+.menu-toggle {
+  /* display: none; */
+  flex-direction: column;
+  height: 20px;
+  padding: 1px;
+  margin-right: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  /* right: 24px; */
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  /* padding: 0.3px; */
+  margin-bottom: 3px;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+  /* transition: 1s; */
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+  /* transition: 1s; */
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: #fff;
+  transform: rotate(45deg) translate(-1px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: #fff;
+  transform: rotate(-45deg) translate(-1px, 1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+nav ul {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 60%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  z-index: 99;
+  /* overflow: hidden; */
+  transform: translateX(-100%);
+  transition: all 1s;
+  opacity: 0;
+}
+.menu-toggle {
+  display: flex;
+}
+nav ul.slide {
+  list-style: none;
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(-0);
+}
+
+li a {
+  margin-right: 30px;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+.masuk {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-top: 0;
+  background-color: #ffff1e;
+}
+
+.masuk h4 {
+  margin: auto 30px;
+}
+
+.menu {
+  padding: 5px 20px 10px 20px;
+}
+
+.menu-nav {
+  border-bottom: 1px solid gainsboro;
+  line-height: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.menu-nav li {
+  list-style: none;
+  font-size: 13px;
+}
+
+.halaman {
+  display: absolute;
+  margin-top: -300px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(221, 240, 89) 20%, rgb(255, 255, 255));
+  opacity: 0.8;
+  z-index: -99;
+}
+
+.container {
+  background-image: url(../banner\ amazon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 250px;
+  gap: 15px;
+}
+
+.gaming {
+  background-color: #ffffff;
+  width: 260px;
+  position: relative;
+  padding: 15px;
+  height: 400px;
+}
+
+.image {
+  width: 100%;
+  height: 75%;
+  text-align: center;
+}
+
+.foto-1 {
+  display: flex;
+  padding-top: 10px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.prod {
+  width: 50%;
+  height: 120px;
+}
+
+.prod.earphone {
+  background-image: url(../earphone\ amazon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.prod.keyboard {
+  background-image: url(../Keyboard\ amazon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foto-2 {
+  display: flex;
+  padding-top: 10px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.prod.kursi {
+  background-image: url(../Kursi\ amazon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.prod.mouse {
+  background-image: url(../Mouse\ amazon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gaming a {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Card-2 */
+
+.elektronik {
+  background-color: #fff;
+  position: relative;
+  width: 260px;
+  padding: 15px;
+  height: 400px;
+}
+
+.elektronik img {
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.elektronik a {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+/* Toys */
+
+.toys {
+  position: relative;
+  background-color: #ffffff;
+  width: 260px;
+  padding: 15px;
+  height: 400px;
+}
+
+.toys img {
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.toys a {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.sign {
+  width: 260px;
+  height: 400px;
+}
+
+.sign-1 {
+  background-color: #ffffff;
+  width: 100%;
+  /* text-align: center; */
+  padding: 15px;
+  margin-bottom: 25px;
+  height: 125px;
+}
+
+.sign-1 button {
+  display: flex;
+  position: relative;
+  padding: 10px 75px;
+  font-size: 12px;
+  margin: 30px auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe51e;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.1px 0.1px 2px 0.1px rgb(0, 0, 0, 0.2);
+}
+
+.sign-2 img {
+  width: 290px;
+  height: 250px;
+}
+
+.cont a {
+  font-size: 13px;
+  color: #218395;
+}
+
+.cont a:hover {
+  color: #c7511f;
+}
